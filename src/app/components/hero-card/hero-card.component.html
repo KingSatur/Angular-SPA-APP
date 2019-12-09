@@ -1,0 +1,18 @@
+<div class="card animated fadeIn fast">
+        <!-- Colocando la informacion de cada elemento 
+        Primera forma
+            -Usando interpolacion con corchetes de la siguiente forma {{hero.datoAobtener}}
+        Segunda forma
+            -Usando [src] = "hero.img"
+        -->
+        <img src="{{hero.img}}" class="card-img-top" alt="{{hero.nombre}}">
+        <div class="card-body">
+            <h5 class="card-title">{{hero.nombre}}</h5>
+            <p class="card-text">{{hero.bio}}</p>
+            <p class="card-text"><small class="text-muted">{{hero.aparicion}}</small></p>
+            <button (click)="seeHero()" type="button" class="btn btn-outline-primary btn-block">
+                See more
+            </button>
+            <!-- <a [routerLink]="['Hero', i]" class="btn btn-outline-primary">Ver mas link...</a> -->
+        </div>
+</div>

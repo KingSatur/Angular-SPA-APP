@@ -1,0 +1,25 @@
+<h1>{{hero.nombre | uppercase}}
+    <small>({{hero.aparicion | date:'y'}})</small>
+</h1>
+<hr>
+
+<div class="row animated fadeIn fast">
+
+    <div class="col-md-4">
+        <img src="{{hero.img}}" class="img-fluid" alt="">
+        <br><br>
+        <a class="btn btn-outline-danger btn-block" [routerLink]="['/Heros']" >Back</a>
+    </div>
+
+    <div class="col-md-8">
+        <h3>{{hero.nombre}}</h3>
+        <hr>
+        <p>
+            {{hero.bio}}
+        </p>
+        <div>
+            <img class="img-logo" src="{{heroHomeImg}}" alt="">
+        </div>
+    </div>
+
+</div>

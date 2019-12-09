@@ -1,0 +1,5 @@
+<h1 *ngIf="heroSearch.length > 0">The most amazing heros that have ever been exist</h1>
+<div class="card-columns" *ngIf="heroSearch.length > 0">
+    <app-hero-card [hero]="hero" (selectedHero)="seeHero($event)" *ngFor="let hero of heroSearch, let i = index" ></app-hero-card>
+</div>
+<h1 *ngIf="heroSearch.length == 0">There aren`t heros with that words</h1>

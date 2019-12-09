@@ -1,0 +1,5 @@
+<h1>The most amazing heros that have ever been exist</h1>
+<div class="card-columns">
+    <!-- -->
+    <app-hero-card (selectedHero)="seeHero($event)" [hero]="hero" *ngFor="let hero of heros, let i = index" ></app-hero-card>
+</div>
